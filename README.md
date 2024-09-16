@@ -1,9 +1,9 @@
 <div align="center">
 
-![logo](https://github.com/treyyoder/quakejs-docker/blob/master/quakejs-docker.png?raw=true)
+![logo](https://github.com/PrinzWalium/quakejs-docker/blob/master/quakejs-docker.png?raw=true)
 # quakejs-docker
 
-![Docker Image CI](https://github.com/treyyoder/quakejs-docker/workflows/Docker%20Image%20CI/badge.svg)
+![Docker Image CI](https://github.com/PrinzWalium/quakejs-docker/workflows/Docker%20Image%20CI/badge.svg)
 
 </div>
 
@@ -12,22 +12,22 @@
 The goal of this project was to create a fully independent quakejs server in Docker that does not require content to be served from the internet.
 Hence, once pulled, this does not need to connect to any external provider, ie. content.quakejs.com. Nor does this server need to be proxied/served/relayed from quakejs.com
 
-#### Simply pull the image [treyyoder/quakejs](https://hub.docker.com/r/treyyoder/quakejs)
+#### Simply pull the image [PrinzWalium/quakejs](https://hub.docker.com/r/PrinzWalium/quakejs)
 
 ```
-docker pull treyyoder/quakejs:latest
+docker pull PrinzWalium/quakejs:latest
 ```
 
 #### and run it:
 
 ```
-docker run -d --name quakejs -p 8080:80 treyyoder/quakejs:latest
+docker run -d --name quakejs -p 8080:80 PrinzWalium/quakejs:latest
 ```
 
 #### Example:
 
 ```
-docker run -d --name quakejs -p 8080:80 treyyoder/quakejs:latest
+docker run -d --name quakejs -p 8080:80 PrinzWalium/quakejs:latest
 ```
 
 Send all you friends/coworkers the link: ex. http://localhost:8080 and start fragging ;)
@@ -45,14 +45,14 @@ services:
         container_name: quakejs
         ports:
             - '8080:80'
-        image: 'treyyoder/quakejs:latest'
+        image: 'PrinzWalium/quakejs:latest'
 ```
 
 #### Building the Image
 
 Build the image with:
 
-`docker build . -t treyyoder/quakejs:latest`
+`docker build . -t PrinzWalium/quakejs:latest`
 
 ## Credits:
 
