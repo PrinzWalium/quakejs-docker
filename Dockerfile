@@ -1,5 +1,5 @@
 # Use current Ubuntu LTS as the base image
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 # Update apt-get and install essential tools like curl, gpg, git, nginx, and supervisor
 RUN apt-get update && \
