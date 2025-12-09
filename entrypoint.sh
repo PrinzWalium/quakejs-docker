@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Redirect content server to localhost
+echo "127.0.0.1 content.quakejs.com" >> /etc/hosts
+
 cd /var/www/html
 
 sed -i "s/'quakejs:/window.location.hostname + ':/g" index.html
