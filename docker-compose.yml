@@ -1,9 +1,11 @@
 services:
     quakejs:
         container_name: quakejs
-        environment:
-            - HTTP_PORT=8080
         ports:
             - '8080:80'
             - '27960:27960'
         image: 'PrinzWalium/quakejs:latest'
+        # Fix for unavalible external content server
+        extra_hosts:
+            - "content.quakejs.com:127.0.0.1"
+        restart: unless-stopped
